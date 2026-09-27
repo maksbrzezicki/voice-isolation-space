@@ -1,9 +1,5 @@
 # Voice acoustics during a short-term analog space mission
 
-Analysis code for:
-
-Brzezicki MA, Skorupa A, Paliga M, Josiński M, Szczotka A, Niedbała D, Opaliński K. *Reduced vocal variability across a short-term analog space mission: An exploratory longitudinal study with implications for automated behavioural health monitoring.* Submitted to Frontiers in Psychiatry.
-
 Nine analog astronauts recorded spoken video diaries every other day during two 14-day missions at the LunAres Research Station (62 recordings). The notebook takes the per-recording eGeMAPS feature table and reproduces every number, table and figure reported in the article:
 
 1. mission-day index and cohort description;
@@ -23,10 +19,3 @@ python -c "import nbformat; from nbclient import NotebookClient; nb = nbformat.r
 python verify_results.py
 ```
 
-Figures and tables are written to `analysis_outputs/`. `verify_results.py` compares the fresh manifest with `expected_results/results_manifest.json`. The random seed is fixed at 42.
-
-Use the pinned versions in `requirements.txt`. The XGBoost result depends on the library version; the other four models give the same results across versions.
-
-## Licence
-
-MIT (see `LICENSE`).
