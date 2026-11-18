@@ -16,6 +16,5 @@ python3.11 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 # place the data file in data/ (see data/README.md)
 python -c "import nbformat; from nbclient import NotebookClient; nb = nbformat.read('voice_isolation_analysis.ipynb', 4); NotebookClient(nb, timeout=1800, kernel_name='python3').execute(); nbformat.write(nb, 'voice_isolation_analysis_executed.ipynb')"
-python verify_results.py
 ```
 
